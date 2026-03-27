@@ -2,61 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources for Builders</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
     }
-    h1, h2 {
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
+    p.subtitle {
+      color: #94a3b8;
+      margin-bottom: 40px;
+    }
+
     .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 16px;
-      margin: 16px 0;
+      background: #1e293b;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: 0.2s ease;
+      border: 1px solid #334155;
     }
-    a {
-      color: #0366d6;
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #3b82f6;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a {
+      color: #60a5fa;
       text-decoration: none;
+      font-weight: 600;
     }
-    a:hover {
+
+    .card a:hover {
       text-decoration: underline;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
-  <h1>My Useful Resources</h1>
-  <p>A small curated page of tools and sites for founders, developers, and product builders.</p>
+  <div class="container">
 
-  <h2>Featured Links</h2>
+    <h1>🚀 Resources for Builders</h1>
+    <p class="subtitle">
+      Curated tools and platforms to launch, automate, and grow your product.
+    </p>
 
-  <div class="card">
-    <h3><a href="https://launchdirectories.com/" target="_blank">LaunchDirectories</a></h3>
-    <p>100+ Product Hunt alternatives and startup directories with traffic stats and submission guides. Includes free and paid options for launching your product and building backlinks.</p>
+    <div class="card">
+      <span class="tag">Launch</span>
+      <h3><a href="https://launchdirectories.com" target="_blank">LaunchDirectories</a></h3>
+      <p>
+        100+ Product Hunt alternatives and startup directories with traffic stats and guides.
+        Includes free and paid options to build backlinks and launch your product.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Automation</span>
+      <h3><a href="https://stripto.pl/" target="_blank">Stripto</a></h3>
+      <p>
+        Automatyczne faktury Stripe → Fakturownia / inFakt, gotowe na KSeF.
+        Setup w 60 sekund. 29 zł/mies. + 10 transakcji za darmo.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Tools</span>
+      <h3><a href="https://toolfio.com/" target="_blank">Toolfio</a></h3>
+      <p>
+        Curated tools, SaaS platforms, and resources for indie makers,
+        developers, and founders building products.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Jobs</span>
+      <h3><a href="https://mednomadjobs.com/" target="_blank">MedNomad Jobs</a></h3>
+      <p>
+        Travel healthcare jobs across the US. Compare pay, housing,
+        and benefits from top staffing agencies.
+      </p>
+    </div>
+
+    <footer>
+      Built with GitHub Pages • Simple, fast, and useful
+    </footer>
+
   </div>
-
-  <div class="card">
-    <h3><a href="https://stripto.pl/" target="_blank">Stripto</a></h3>
-    <p>Automatyczne faktury z płatności Stripe w Fakturowni lub inFakt, gotowe na KSeF. Konfiguracja w 60 sekund. 29 zł/mies. 10 transakcji za darmo.</p>
-  </div>
-
-  <div class="card">
-    <h3><a href="https://toolfio.com/" target="_blank">Toolfio</a></h3>
-    <p>Curated tools, SaaS platforms, and resources for indie makers, developers, and founders. Useful for building, launching, and growing products.</p>
-  </div>
-
-  <div class="card">
-    <h3><a href="https://mednomadjobs.com/" target="_blank">MedNomad Jobs</a></h3>
-    <p>Browse travel nurse, allied health, therapy, imaging, and lab contracts across the US. Compare pay, housing stipends, and benefits from staffing agencies.</p>
-  </div>
-
-  <h2>About</h2>
-  <p>This page is hosted on GitHub Pages as a simple public resource site.</p>
 </body>
 </html>
